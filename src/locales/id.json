@@ -1,0 +1,10 @@
+{
+  "title": "Kalkulator Dana Pensiun",
+  "totalPension": "Total Dana Pensiun (IDR):",
+  "yearsUntilRetirement": "Jumlah Tahun Hingga Pensiun:",
+  "annualReturnRate": "Tingkat Pengembalian Tahunan (%):",
+  "calculate": "Hitung Kontribusi Bulanan",
+  "resultTitle": "Hasil:",
+  "resultText": "Untuk mencapai total dana pensiun sebesar {totalPension} IDR dalam {years} tahun dengan tingkat pengembalian tahunan {rate}%:",
+  "resultAmount": "Anda perlu menginvestasikan sekitar {amount} IDR per bulan."
+}

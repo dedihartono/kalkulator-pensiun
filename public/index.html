@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator Dana Pensiun</title>
+        
+        <!-- SEO -->
+        <meta name="description" content="Kalkulator Dana Pensiun membantu Anda merencanakan pensiun dengan mudah. Hitung dana pensiun Anda berdasarkan jumlah dana, tahun hingga pensiun, dan tingkat pengembalian tahunan.">
+        <meta name="keywords" content="kalkulator dana pensiun, perencanaan pensiun, kalkulator finansial, pensiun, keuangan">
+        <meta name="author" content="Your Name">
+        <meta property="og:title" content="Kalkulator Dana Pensiun">
+        <meta property="og:description" content="Kalkulator Dana Pensiun membantu Anda merencanakan pensiun dengan mudah. Hitung dana pensiun Anda berdasarkan jumlah dana, tahun hingga pensiun, dan tingkat pengembalian tahunan.">
+        <meta property="og:image" content="https://calculator.dedihartono.com/logo.png">
+        <meta property="og:url" content="https://calculator.dedihartono.com">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Kalkulator Dana Pensiun">
+        <meta name="twitter:description" content="Kalkulator Dana Pensiun membantu Anda merencanakan pensiun dengan mudah. Hitung dana pensiun Anda berdasarkan jumlah dana, tahun hingga pensiun, dan tingkat pengembalian tahunan.">
+        <meta name="twitter:image" content="https://calculator.dedihartono.com/logo.png">
+        
+        <!-- PWA -->
+        <link rel="manifest" href="/manifest.json">
+
+        <!-- Icons -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/icons/mstile-150x150.png">
+        <meta name="theme-color" content="#3b2c0a">
+        
+        <!-- Styles -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+<body class="bg-background flex flex-col items-center justify-center min-h-screen">
+    <!-- Navbar -->
+    <nav class="navbar w-full py-4 shadow-md fixed top-0 left-0 right-0 z-10 bg-caf-noir">
+        <div class="container mx-auto px-6 flex flex-wrap items-center">
+            <!-- Logo and Title -->
+            <div class="hidden sm:flex items-center mr-auto">
+                <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2">
+                <div class="navbar-title text-white text-xl font-bold" id="navbar-title">Retirement Calculator</div>
+            </div>
+            <!-- Language Switcher -->
+            <div class="w-full sm:w-auto flex justify-center sm:justify-end items-center">
+                <label for="language-switcher" class="sr-only">Language</label>
+                <select id="language-switcher" class="p-2 border border-goldenrod rounded bg-white text-black">
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="flex-grow flex items-center justify-center w-full">
+        <div class="bg-white p-8 rounded shadow-md w-full max-w-md mx-auto mt-20">
+            <img src="logo.png" alt="Logo" class="h-20 w-20  mx-auto my-2">
+            <h1 class="text-2xl font-bold mb-6 text-center" id="title"></h1>
+            <label for="totalDana" class="block text-gray-700" id="totalPensionLabel"></label>
+            <input type="number" id="totalDana" class="w-full p-2 border border-goldenrod rounded mb-4" value="3000000000">
+
+            <label for="years" class="block text-gray-700" id="yearsUntilRetirementLabel"></label>
+            <input type="number" id="years" class="w-full p-2 border border-goldenrod rounded mb-4" value="30">
+
+            <label for="rate" class="block text-gray-700" id="annualReturnRateLabel"></label>
+            <input type="number" id="rate" class="w-full p-2 border border-goldenrod rounded mb-4" step="0.1" value="7">
+
+            <button type="button" onclick="calculatePension()" class="w-full bg-goldenrod text-black p-2 rounded" id="calculateButton"></button>
+
+            <div class="result mt-6 text-center" id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

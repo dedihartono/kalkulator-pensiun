@@ -1,0 +1,40 @@
+/* Define colors */
+:root {
+    --black: #000000;
+    --goldenrod: #d9ab33;
+    --caf-noir: #3b2c0a;
+    --background: #000000;
+}
+
+/* Custom Background */
+.bg-background {
+    background-color: var(--background);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--caf-noir);
+}
+
+.navbar-title {
+    color: white;
+}
+
+/* Input Borders */
+.border-goldenrod {
+    border-color: var(--goldenrod);
+}
+
+/* Button Styles */
+.bg-goldenrod {
+    background-color: var(--goldenrod);
+}
+
+.bg-goldenrod:hover {
+    background-color: #b88d27; /* Darker goldenrod on hover */
+}
+
+/* Result Text */
+.result {
+    color: var(--goldenrod);
+}

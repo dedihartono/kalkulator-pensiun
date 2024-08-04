@@ -1,0 +1,10 @@
+{
+  "title": "Retirement Fund Calculator",
+  "totalPension": "Total Retirement Fund (IDR):",
+  "yearsUntilRetirement": "Years Until Retirement:",
+  "annualReturnRate": "Annual Return Rate (%):",
+  "calculate": "Calculate Monthly Contribution",
+  "resultTitle": "Result:",
+  "resultText": "To achieve a total retirement fund of {totalPension} IDR in {years} years with an annual return rate of {rate}%:",
+  "resultAmount": "You need to invest approximately {amount} IDR per month."
+}

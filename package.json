@@ -1,0 +1,12 @@
+{
+  "name": "pension-calculator",
+  "version": "1.0.0",
+  "description": "Kalkulator Dana Pensiun",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
