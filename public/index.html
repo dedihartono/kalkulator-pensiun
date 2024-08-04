@@ -33,7 +33,7 @@
         
         <!-- Styles -->
         <script src="https://cdn.tailwindcss.com"></script>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css?v=0.0.1">
     </head>
     
 <body class="bg-background flex flex-col items-center justify-center min-h-screen">
@@ -76,6 +76,12 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Floating install button -->
+    <button id="installButton" class="install-button hidden">
+        <img src="/icons/icons8-install-58.png" alt="Install App" class="install-icon">
+    </button>
+
+    <script src="install.js?v=0.0.1"></script>
+    <script src="script.js?v=0.0.1"></script>
 </body>
 </html>

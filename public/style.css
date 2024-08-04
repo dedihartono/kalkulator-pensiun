@@ -38,3 +38,47 @@
 .result {
     color: var(--goldenrod);
 }
+
+/* Keyframes for zoom animation */
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Adjust scale for zoom effect */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Floating install button styles */
+.install-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--goldenrod); /* Your custom color */
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    animation: zoomInOut 1.5s infinite; /* Apply animation */
+}
+.install-button:hover {
+    background-color: #b88d27; /* Your custom color */
+}
+
+.install-icon {
+    width: 24px;
+    height: 24px;
+    color: #fff; /* Icon color */
+}
+
+.install-button.hidden {
+    display: none;
+}
