@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function loadTranslations() {
-    fetch('/locales/en')
+    fetch('locales/en')
         .then(response => response.json())
         .then(data => {
             translations.en = data;
-            return fetch('/locales/id');
+            return fetch('locales/id');
         })
         .then(response => response.json())
         .then(data => {
@@ -58,7 +58,7 @@ function calculatePension() {
 
 if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js?v=0.0.2')
+        navigator.serviceWorker.register('service-worker.js?v=0.0.2')
             .then(registration => {
                 console.log('Service Worker registered with scope:', registration.scope);
             })

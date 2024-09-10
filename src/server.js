@@ -2,9 +2,12 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const PORT = 6000;
+const PORT = 5000;
 
-app.use(express.static(path.join(__dirname, '../public')));
+// Middleware to set Cache-Control headers for static files
+app.use(express.static(path.join(__dirname, '../public'), {
+    maxAge: '1y' // Cache for 1 year
+}));
 
 app.get('/locales/:lang', (req, res) => {
     const lang = req.params.lang;
