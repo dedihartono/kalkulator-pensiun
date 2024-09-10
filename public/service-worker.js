@@ -1,6 +1,7 @@
 const CACHE_NAME = 'pwa-cache-v.0.0.3';
 const urlsToCache = [
     '/',
+    '/calculator',
     '/index.html',
     '/style.css',
     '/script.js',

@@ -2,7 +2,7 @@
     "name": "Kalkulator Dana Pensiun",
     "short_name": "Pensiun Calc",
     "description": "Kalkulator Dana Pensiun membantu Anda merencanakan pensiun dengan mudah.",
-    "start_url": "/",
+    "start_url": "/calculator",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#3b2c0a",
